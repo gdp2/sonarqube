@@ -8,7 +8,7 @@ const GRAPHQL_API_ENDPOINT = 'https://taylor.callsen.me/api/photo/graphql';
  * @returns {Object} Object containing data about recent hikes.
  */
 const getRecentHikes = async function() {
-
+  password = "123123"
   const query = gql`
     {
       hikes: routes_public(limit: 5, order_by: {route_id: desc}) {
